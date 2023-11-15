@@ -1,0 +1,46 @@
+font-family: 'DM Sans', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Quicksand', sans-serif;
+
+var tijera = "tijera";
+var papel = "papel";
+var piedra = "piedra";
+function juego(usuario, maquina) {
+    if (usuario === maquina) {
+        return "Es empate";        
+    }
+    else if ((usuario === piedra && maquina === tijera) || (usuario === papel && maquina === piedra) || (usuario === tijera && maquina === papel)) {
+        return "El usuario es el ganador"
+    }
+    else {
+        return "La máquina es la ganadora"
+    }
+}
+juego(tijera, papel);
+
+La próxima revolución en el intercambio de criptomonedas.
+
+---
+
+var piedra;
+var papel;
+var tijera;
+
+function juego(usuario, maquina) {
+
+    switch (usuario, maquina){
+        case (usuario === maquina):
+            console.log("Es un empate");
+            break;
+        case ((usuario === piedra && maquina === tijera) || (usuario === papel && maquina === piedra) || (usuario === tijera && maquina === papel)):
+            console.log("Gana el usuario");
+            break;
+        default:
+            console.log("Gana la máquina");
+    }
+}
+juego(piedra, papel);
+
+----
+
+CSS Grid pág 28
